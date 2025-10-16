@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuyaWan</title>
+    <link rel="icon" href="k.png">
+    <style>
+        body{
+            background: #f3efef;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90vh;
+        }
+        .firstbox h2{
+            font-size: 4.6rem;
+            color: blue;
+            font-family: arial;
+        }
+        .firstbox span{
+            font-size: 2.6rem;
+            font-family: arial;
+        }
+        .secondbox{
+            padding: 10px;
+            box-shadow: 1px 1px 8px;
+            border-radius: 10px;
+            background-color: white;
+            /* height: 300px; */
+        }
+        input{
+            padding: 20px;
+            margin: 10px;
+            width: 400px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-family: arial;
+        }
+        .btn{
+            width: 440px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            font-family: arial;
+            background: #0866ff;
+            margin-bottom: 100px;
+        }
+        a{
+            font-family: arial;
+            text-decoration: none;
+            color:blue;
+            margin-bottom: 20px;
+        }
+        @media(width < 600px){
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+            .firstbox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+             .firstbox h2{
+            font-size: 2.6rem;
+            color: blue;
+            font-family: arial;
+        }
+        .firstbox span{
+            font-size: 1.2rem;
+            font-family: arial;
+        }
+
+.secondbox{
+            padding: 5px;
+            box-shadow: 1px 1px 8px;
+            border-radius: 10px;
+            background-color: white;
+            /* height: 400px; */
+            width: 300px;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            width: 255px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-family: arial;
+        }
+        .btn{
+            width: 280px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            font-family: arial;
+            background: #0866ff;
+        }
+
+        
+
+        }
+    </style>
+</head>
+<body>
+    <div class="firstbox">
+        <p>
+            <h2>KuyaWan</h2>
+            <span>Connect with friends and the world <br> around you on kuyawan.</span>
+        </p>
+    </div>
+    <div class="secondbox">
+        <input id="user" type="" value="Yuwan Ayta" placeholder="Email or phone number" name="" id=""><br>
+        <input id="pass" type="password" value="12345" placeholder="Password" name="" id=""><br>
+        <input class="btn" onclick="go()" type="submit" value="Log In" name="" id=""><br>
+      <br>
+        <center>  <a href="login.html">Forgot password?</a></center>
+<br>
+    </div>
+</body>
+<script>
+    function go(){
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+     if(user == "Yuwan Ayta" && pass == "12345"){
+        alert("Successfully Login");
+        location.replace("post.html");
+    }   else{
+         alert("Dili mao Yuwan");
+
+     }
+    }
+</script>
+</html>

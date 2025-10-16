@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>KuyaWan</title>
+    <link rel="icon" href="k.png">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            background: #f3efef;
+        }
+        .coverphoto{
+            width: 1000px;
+            height: 400px;
+            background-position: bottom;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            background-image: url("cover.jpg");
+        }
+        .profile{
+            width: 200px;
+            border-radius: 100%;
+            position: relative;
+            top: -60px;
+        }
+        .container{
+            position: relative;
+            margin: auto;
+            /* width: 80%; */
+            width: 1000px;
+            /* background-color: red; */
+        }
+        .name{
+            color: black;
+            font-family: arial;
+            font-weight: bold;
+            position: relative;
+            top: -170px;
+            font-size: 3.5rem;
+            left: 220px;
+        }
+        .name span{
+            position: relative;
+            color: grey;
+            top:-40px;
+            left: 10px;
+            font-size: 1.2rem;
+        }
+        .mgabutton{
+            position: relative;
+            top:-180px;
+        }
+        ul li{
+            font-family: arial;
+            margin: 20px;
+            list-style: none;
+            cursor: pointer;
+        }
+        ul{
+            border-top:1px solid ;
+            display: flex;
+        }
+        ul li a{
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        .sel{
+            color: blue;
+            padding-bottom: 20px;
+            border-bottom:5px solid ;
+        }
+        .smallProfile{
+            width: 90px;
+            border-radius: 100%;
+        }
+        .pname{
+            font-weight: bold;
+            font-family: arial;
+            position: relative;
+            font-size: 1.2rem;
+            top: -50px;
+            left: 10px;
+        }
+        .date{
+            color: grey;
+            position: relative;
+            top: -40px;
+            left: 105px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .likes ul{
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: red; */
+            width: 960px;
+        }
+        .imgPost{
+            width: 960px;
+        }
+
+
+        @media(width < 600px){
+            body{
+                overflow-x: hidden;
+            }
+            .container{
+                margin: 0;
+                padding: 0;
+                width: 200px;
+            }
+            .coverphoto{
+                width: 390px;
+            }
+             .profile{
+            width: 120px;
+            border-radius: 100%;
+            position: relative;
+            top: -60px;
+        }
+         .name{
+            color: black;
+            font-family: arial;
+            font-weight: bold;
+            position: relative;
+            top: -120px;
+            font-size: 1.5rem;
+            left: 130px;
+        }
+        .name span{
+            position: relative;
+            color: grey;
+            top:0px;
+            left: 10px;
+            font-size: 1rem;
+        }
+        .mgabutton{
+            position: relative;
+            top:-100px;
+        
+        }
+
+         ul li{
+            font-family: arial;
+            margin: 20px;
+            list-style: none;
+            cursor: pointer;
+        }
+        ul{
+            border-top:1px solid ;
+            display: flex;
+            width: 400px;
+            /* background-color: red; */
+        }
+        ul li a{
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+         .imgPost{
+            width: 400px;
+        }
+        .smallProfile{
+            width: 80px;
+        }
+        .pname{
+            font-size: 1.2rem;
+            /* background-color: red; */
+        }
+        .post p{
+            width: 400px;
+            /* background-color: red; */
+        }
+        .date{
+            font-size: 13px;
+        }
+        .likes ul{
+            /* background-color: red; */
+            width: 400px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <center>
+            <div id="backtothetop" class="coverphoto"></div>
+        </center>
+        <img src="profile.png" class="profile" alt="">
+        <p class="name">Yuwan Oryk Ayta <br> <span>368 friend</span></p>
+        <div class="mgabutton">
+            <ul>
+                <li><a class="sel" href="post.html">Post</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+
+
+        <div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on October 16,2025</span>
+            
+
+            </p>
+          <img src="1.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Updated his profile on October 16,2025</span>
+            
+
+            </p>
+          <img src="profile.png" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on October 13,2025</span>
+            
+
+            </p>
+          <img src="2.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Updated his cover photo on October 12,2025</span>
+            
+
+            </p>
+          <img src="cover.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+<div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on October 11,2025</span>
+            
+
+            </p>
+          <img src="3.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+<div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on October 10,2025</span>
+            
+
+            </p>
+          <img src="4.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+<div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on October 1,2025</span>
+            
+
+            </p>
+            <video src="vid.mp4" controls class="imgPost"> </video>
+          <!-- <img src="1.jpg" class="imgPost" alt=""> -->
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+<div class="post">
+            <p>
+                <a href="#backtothetop">
+                    <img src="profile.png" class="smallProfile" alt="">
+                </a>
+                <span class="pname">Yuwan Oryk Ayta</span> <br>
+                <span class="date">Posted on September 29,2025</span>
+            
+
+            </p>
+          <img src="5.jpg" class="imgPost" alt="">
+            <div class="likes">
+                <ul>
+                    <li onclick="go()">Like</li>
+                    <li onclick="go()">Comment</li>
+                    <li onclick="go()">Share</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+    function go(){
+        alert("KuyaWan");
+    }
+
+
+</script>
+</html>
